@@ -86,7 +86,7 @@ defaults:
       share: true
 
 # Site Author
-author: Redbeanmilk
+author:
   name: Redbeanmilk
   picture:
   email: ddock4you@hotmail.com
