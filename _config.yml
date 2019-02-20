@@ -87,9 +87,9 @@ defaults:
 
 # Site Author
 author:
-  name: "Redbeanmilk"
+  name:
   picture:
-  email: "ddock4you@hotmail.com"
+  email:
   twitter:
   links:
     - title:
