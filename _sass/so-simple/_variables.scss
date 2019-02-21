@@ -1,7 +1,8 @@
 /* ==========================================================================
    Variables
    ========================================================================== */
-
+   // font 추가
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700');
 /* Breakpoint widths */
 $small: 320px !default;
 $medium: 768px !default;
@@ -38,8 +39,8 @@ $h6-min: ($base-font-size / $modular-scale-1) !default;
 $h6-max: ($base-font-size / $modular-scale-2) !default;
 
 /* Font Families */
-$serif-font-family: "Lora", serif !default;
-$sans-serif-font-family: "Noto Sans", sans-serif !default;
+$serif-font-family: "Noto Sans KR", serif !default;
+$sans-serif-font-family: "Noto Sans KR", sans-serif !default;
 $monospace-font-family: Menlo, Consolas, Monaco, "Courier New", Courier, monospace !default;
 
 $base-font-family: $sans-serif-font-family !default;
