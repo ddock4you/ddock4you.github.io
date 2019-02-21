@@ -1,20 +1,21 @@
----
-name: "Bug Report"
-about: "Is something not working as expected?"
----
-
 <!--
   Before opening a new issue please:
   
   - Verify you have the latest versions of Jekyll and So Simple 
     installed by running `bundle update`.
   - Thoroughly read the theme's documentation at
-    https://github.com/mmistakes/so-simple-theme
+    https://github.com/mmistakes/so-simple-theme/blob/master/README.md
   - Search all issues at https://github.com/mmistakes/so-simple-theme/issues 
     for solutions and to avoid duplication.
   - Ask for help at https://talk.jekyllrb.com/
   
   After exhausting these suggestions use the format below.
+-->
+
+## Description
+
+<!--
+  Describe the issue or proposed feature enhancement.
 -->
 
 ## Environment
@@ -33,14 +34,15 @@ about: "Is something not working as expected?"
 - Ruby gem or remote theme version:
 - Jekyll version:
 - Git repository URL:
-- GitHub Pages hosted (if yes provide URL to site):
 - Operating system:
+- GitHub Pages hosted (if yes provide URL to site):
+
+---
 
 ## Expected behavior
 
 <!--
-  What is it you expected to happen? This should be a description of how the
-  functionality you tried to use is supposed to work.
+  Describe the intended output or what you expected to see.
 -->
 
 ## Steps to reproduce the behavior
@@ -58,11 +60,4 @@ about: "Is something not working as expected?"
   and include this output in the filed issue.
 
   Screenshots can also be included if they help illustrate a behavior.
--->
-
-## Other
-
-<!--
-  NOTE: Please provide a code repository, gist, code snippet, sample files, 
-  screenshots, or anything else you think will aid in reproducing the issue.
 -->
