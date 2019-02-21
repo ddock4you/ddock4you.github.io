@@ -1,0 +1,375 @@
+From 009f842a856a86006cd1e72ac58d7cdc38230d84 Mon Sep 17 00:00:00 2001
+From: ddock4you <ddock4you@gmail.com>
+Date: Thu, 21 Feb 2019 20:22:53 +0900
+Subject: [PATCH] =?UTF-8?q?=EB=8B=A4=EC=8B=9C=20=EC=84=A4=EC=B9=98?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+---
+ .github/CONTRIBUTING.md                      | 22 ------
+ .github/ISSUE_TEMPLATE.md                    | 63 ---------------
+ .github/stale.yml                            | 22 ------
+ .gitignore                                   | 82 --------------------
+ 404.html                                     | 24 ++++++
+ _posts/2019-02-21-welcome-to-jekyll.markdown | 25 ++++++
+ about.md                                     | 18 +++++
+ package.json                                 | 40 ++++++++++
+ 8 files changed, 107 insertions(+), 189 deletions(-)
+ delete mode 100644 .github/CONTRIBUTING.md
+ delete mode 100644 .github/ISSUE_TEMPLATE.md
+ delete mode 100644 .github/stale.yml
+ create mode 100644 404.html
+ create mode 100644 _posts/2019-02-21-welcome-to-jekyll.markdown
+ create mode 100644 about.md
+ create mode 100644 package.json
+
+diff --git a/.github/CONTRIBUTING.md b/.github/CONTRIBUTING.md
+deleted file mode 100644
+index 05b2aba..0000000
+--- a/.github/CONTRIBUTING.md
++++ /dev/null
+@@ -1,22 +0,0 @@
+-# Contributing
+-
+-Found a typo in the documentation? Requesting a feature or
+-[bug fix][issues]? Search through the open and closed issues before [submitting an issue][new-issue] to avoid duplication. 
+-
+-[Pull requests][using-pull-requests] are also appreciated. If this is your first time, it may be helpful to read up on the [GitHub Flow][github-flow].
+-
+-If your contribution adds or changes the theme's behavior, make sure to update the documentation and/or sample content. Documentation lives in README.md while sample posts, pages, and collections are in the [`docs`](docs) and [`example`](example) folders.
+-
+-[issues]: https://github.com/mmistakes/so-simple-theme/issues
+-[new-issue]: https://github.com/mmistakes/so-simple-theme/issues/new
+-[using-pull-requests]: https://help.github.com/articles/using-pull-requests/
+-[github-flow]: https://guides.github.com/introduction/flow/
+-
+-### Pull Requests
+-
+-When submitting a pull request:
+-
+-1. Clone the repo.
+-2. Create a branch off of `master` and give it a meaningful name (e.g.
+-   `my-awesome-new-feature`).
+-3. Open a pull request on GitHub and describe what problem it solves.
+diff --git a/.github/ISSUE_TEMPLATE.md b/.github/ISSUE_TEMPLATE.md
+deleted file mode 100644
+index fe3dbbf..0000000
+--- a/.github/ISSUE_TEMPLATE.md
++++ /dev/null
+@@ -1,63 +0,0 @@
+-<!--
+-  Before opening a new issue please:
+-  
+-  - Verify you have the latest versions of Jekyll and So Simple 
+-    installed by running `bundle update`.
+-  - Thoroughly read the theme's documentation at
+-    https://github.com/mmistakes/so-simple-theme/blob/master/README.md
+-  - Search all issues at https://github.com/mmistakes/so-simple-theme/issues 
+-    for solutions and to avoid duplication.
+-  - Ask for help at https://talk.jekyllrb.com/
+-  
+-  After exhausting these suggestions use the format below.
+--->
+-
+-## Description
+-
+-<!--
+-  Describe the issue or proposed feature enhancement.
+--->
+-
+-## Environment
+-
+-<!--
+-  Please include theme version, Jekyll version, public git repository, whether 
+-  you are hosting with GitHub Pages, and the operating system you tested with.
+-
+-  Issues without a link to a public repository or ZIP file will likely go ignored.
+-  Being able to see your actual files is necessary to troubleshoot, as most 
+-  issues stem from invalid/missing YAML Front Matter, a mis-configured _config.sys 
+-  file, or problematic site content. 
+--->
+-
+-- So Simple version:
+-- Ruby gem or remote theme version:
+-- Jekyll version:
+-- Git repository URL:
+-- Operating system:
+-- GitHub Pages hosted (if yes provide URL to site):
+-
+----
+-
+-## Expected behavior
+-
+-<!--
+-  Describe the intended output or what you expected to see.
+--->
+-
+-## Steps to reproduce the behavior
+-
+-<!--
+-  Describe the steps you took for this problem to exist. Such as: you installed
+-  the theme, customized _config.yml, added your own posts, and started up a 
+-  Jekyll server locally.
+-
+-  If an error occurred on GitHub Pages when pushing, please test a local version
+-  following these setup instructions: 
+-  https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/
+-
+-  Then provide a complete log by running `bundle exec jekyll build --trace --verbose` 
+-  and include this output in the filed issue.
+-
+-  Screenshots can also be included if they help illustrate a behavior.
+--->
+diff --git a/.github/stale.yml b/.github/stale.yml
+deleted file mode 100644
+index 2d8120f..0000000
+--- a/.github/stale.yml
++++ /dev/null
+@@ -1,22 +0,0 @@
+-# Number of days of inactivity before an issue becomes stale
+-daysUntilStale: 30
+-# Number of days of inactivity before a stale issue is closed
+-daysUntilClose: 7
+-# Issues with these labels will never be considered stale
+-exemptLabels:
+-  - "Status: Accepted"
+-  - "Status: Under Consideration"
+-  - "Status: Review Needed"
+-# Label to use when marking an issue as stale
+-staleLabel: "Status: Stale"
+-# Comment to post when marking an issue as stale. Set to `false` to disable
+-markComment: |
+-  This issue has been automatically marked as stale because it has not had recent activity.
+-
+-  If this is a **bug** and you can still reproduce this error on the `master` branch, please reply with any additional information you have about it in order to keep the issue open.
+-
+-  If this is a feature request, please consider whether it can be accomplished in another way. If it cannot, please elaborate on why it is core to this project and why you feel more than 80% of users would find this beneficial.
+-
+-  This issue will automatically be closed in 7 days if no further activity occurs. Thank you for all your contributions.
+-# Comment to post when closing a stale issue. Set to `false` to disable
+-closeComment: false
+diff --git a/.gitignore b/.gitignore
+index 9482416..a65dd05 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -11,85 +11,3 @@ codekit-config.json
+ Gemfile.lock
+ node_modules
+ npm-debug.log*
+-
+-### Jekyll ###
+-_site
+-.sass-cache
+-.jekyll-metadata
+-Gemfile.lock
+-
+-
+-### Gulp ###
+-package.json
+-/node_modules/
+-
+-
+-### Atom ###
+-.ftpconfig
+-.sftpconfig
+-
+-
+-### Compiled Source ###
+-*.com
+-*.class
+-*.dll
+-*.exe
+-*.o
+-*.so
+-
+-
+-### Compressed Packages ###
+-*.7z
+-*.dmg
+-*.gz
+-*.iso
+-*.jar
+-*.rar
+-*.tar
+-*.zip
+-
+-
+-### Logs and Databases ###
+-*.log
+-*.sql
+-*.sqlite
+-
+-
+-### Linux ###
+-*~
+-.fuse_hidden*
+-.Trash-*
+-.nfs*
+-
+-
+-### MacOS ###
+-*.DS_Store
+-.AppleDouble
+-.LSOverride
+-Icon
+-._*
+-.DocumentRevisions-V100
+-.fseventsd
+-.Spotlight-V100
+-.TemporaryItems
+-.Trashes
+-.VolumeIcon.icns
+-.com.apple.timemachine.donotpresent
+-.AppleDB
+-.AppleDesktop
+-Network Trash Folder
+-Temporary Items
+-.apdisk
+-
+-
+-### Windows ###
+-Thumbs.db
+-ehthumbs.db
+-ehthumbs_vista.db
+-Desktop.ini
+-$RECYCLE.BIN/
+-*.cab
+-*.msi
+-*.msm
+-*.msp
+-*.lnk
+diff --git a/404.html b/404.html
+new file mode 100644
+index 0000000..c472b4e
+--- /dev/null
++++ b/404.html
+@@ -0,0 +1,24 @@
++---
++layout: default
++---
++
++<style type="text/css" media="screen">
++  .container {
++    margin: 10px auto;
++    max-width: 600px;
++    text-align: center;
++  }
++  h1 {
++    margin: 30px 0;
++    font-size: 4em;
++    line-height: 1;
++    letter-spacing: -1px;
++  }
++</style>
++
++<div class="container">
++  <h1>404</h1>
++
++  <p><strong>Page not found :(</strong></p>
++  <p>The requested page could not be found.</p>
++</div>
+diff --git a/_posts/2019-02-21-welcome-to-jekyll.markdown b/_posts/2019-02-21-welcome-to-jekyll.markdown
+new file mode 100644
+index 0000000..0469e15
+--- /dev/null
++++ b/_posts/2019-02-21-welcome-to-jekyll.markdown
+@@ -0,0 +1,25 @@
++---
++layout: post
++title:  "Welcome to Jekyll!"
++date:   2019-02-21 20:12:39 +0900
++categories: jekyll update
++---
++You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
++
++To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
++
++Jekyll also offers powerful support for code snippets:
++
++{% highlight ruby %}
++def print_hi(name)
++  puts "Hi, #{name}"
++end
++print_hi('Tom')
++#=> prints 'Hi, Tom' to STDOUT.
++{% endhighlight %}
++
++Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
++
++[jekyll-docs]: https://jekyllrb.com/docs/home
++[jekyll-gh]:   https://github.com/jekyll/jekyll
++[jekyll-talk]: https://talk.jekyllrb.com/
+diff --git a/about.md b/about.md
+new file mode 100644
+index 0000000..8b4e0b2
+--- /dev/null
++++ b/about.md
+@@ -0,0 +1,18 @@
++---
++layout: page
++title: About
++permalink: /about/
++---
++
++This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
++
++You can find the source code for Minima at GitHub:
++[jekyll][jekyll-organization] /
++[minima](https://github.com/jekyll/minima)
++
++You can find the source code for Jekyll at GitHub:
++[jekyll][jekyll-organization] /
++[jekyll](https://github.com/jekyll/jekyll)
++
++
++[jekyll-organization]: https://github.com/jekyll
+diff --git a/package.json b/package.json
+new file mode 100644
+index 0000000..0c3f4b5
+--- /dev/null
++++ b/package.json
+@@ -0,0 +1,40 @@
++{
++  "name": "jekyll-theme-so-simple",
++  "description": "A simple Jekyll theme for words and pictures.",
++  "version": "3.1.1",
++  "author": "Michael Rose",
++  "homepage": "http://mmistakes.github.io/so-simple-theme/",
++  "repository": {
++    "type": "git",
++    "url": "git://github.com/mmistakes/so-simple-theme.git"
++  },
++  "bugs": {
++    "url": "https://github.com/mmistakes/so-simple-theme/issues"
++  },
++  "keywords": [
++    "jekyll",
++    "theme",
++    "minimal",
++    "responsive"
++  ],
++  "license": "MIT",
++  "engines": {
++    "node": ">= 0.10.0"
++  },
++  "devDependencies": {
++    "npm-run-all": "^1.7.0",
++    "onchange": "^2.2.0",
++    "uglify-js": "^2.6.1"
++  },
++  "browserslist": [
++    "last 2 versions",
++    "> 5%",
++    "IE 9"
++  ],
++  "scripts": {
++    "uglify": "uglifyjs assets/js/plugins/lity.js assets/js/plugins/jquery.smooth-scroll.js assets/js/plugins/table-of-contents.js assets/js/main.js -c -m -o assets/js/main.min.js",
++    "add-banner": "node banner.js",
++    "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
++    "build:js": "npm run uglify && npm run add-banner"
++  }
++}
+-- 
+2.17.1.windows.2
+
