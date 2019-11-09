@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>팥우유 블로그</title>
@@ -6,10 +6,19 @@
     <description>Recent content on 팥우유 블로그</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Nov 2019 15:26:22 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 09 Nov 2019 23:27:08 +0900</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>NewTest</title>
+      <link>/blog/newtest/</link>
+      <pubDate>Sat, 09 Nov 2019 23:27:08 +0900</pubDate>
+      
+      <guid>/blog/newtest/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>다른 장소에서 한 번 더 테스트</title>
