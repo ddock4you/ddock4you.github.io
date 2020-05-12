@@ -1,25 +1,22 @@
 {
   "files": {
-    "main.css": "/youtube-music-player/static/css/main.c07850b9.chunk.css",
-    "main.js": "/youtube-music-player/static/js/main.7e7c6657.chunk.js",
-    "main.js.map": "/youtube-music-player/static/js/main.7e7c6657.chunk.js.map",
-    "runtime-main.js": "/youtube-music-player/static/js/runtime-main.3de20c12.js",
-    "runtime-main.js.map": "/youtube-music-player/static/js/runtime-main.3de20c12.js.map",
-    "static/css/2.6d7d54d2.chunk.css": "/youtube-music-player/static/css/2.6d7d54d2.chunk.css",
-    "static/js/2.948dcd2a.chunk.js": "/youtube-music-player/static/js/2.948dcd2a.chunk.js",
-    "static/js/2.948dcd2a.chunk.js.map": "/youtube-music-player/static/js/2.948dcd2a.chunk.js.map",
-    "index.html": "/youtube-music-player/index.html",
-    "precache-manifest.45344bcbc17ac5b8f7f1c5a7fe140bea.js": "/youtube-music-player/precache-manifest.45344bcbc17ac5b8f7f1c5a7fe140bea.js",
-    "service-worker.js": "/youtube-music-player/service-worker.js",
-    "static/css/2.6d7d54d2.chunk.css.map": "/youtube-music-player/static/css/2.6d7d54d2.chunk.css.map",
-    "static/css/main.c07850b9.chunk.css.map": "/youtube-music-player/static/css/main.c07850b9.chunk.css.map",
-    "static/js/2.948dcd2a.chunk.js.LICENSE.txt": "/youtube-music-player/static/js/2.948dcd2a.chunk.js.LICENSE.txt"
+    "main.css": "/static/css/main.20a4e32a.chunk.css",
+    "main.js": "/static/js/main.c5f28360.chunk.js",
+    "main.js.map": "/static/js/main.c5f28360.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d86d6180.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d86d6180.js.map",
+    "static/js/2.b2fbbe8f.chunk.js": "/static/js/2.b2fbbe8f.chunk.js",
+    "static/js/2.b2fbbe8f.chunk.js.map": "/static/js/2.b2fbbe8f.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.2afc0ac038e7d23b8d30f640bb0db9eb.js": "/precache-manifest.2afc0ac038e7d23b8d30f640bb0db9eb.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.20a4e32a.chunk.css.map": "/static/css/main.20a4e32a.chunk.css.map",
+    "static/js/2.b2fbbe8f.chunk.js.LICENSE.txt": "/static/js/2.b2fbbe8f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.3de20c12.js",
-    "static/css/2.6d7d54d2.chunk.css",
-    "static/js/2.948dcd2a.chunk.js",
-    "static/css/main.c07850b9.chunk.css",
-    "static/js/main.7e7c6657.chunk.js"
+    "static/js/runtime-main.d86d6180.js",
+    "static/js/2.b2fbbe8f.chunk.js",
+    "static/css/main.20a4e32a.chunk.css",
+    "static/js/main.c5f28360.chunk.js"
   ]
 }
