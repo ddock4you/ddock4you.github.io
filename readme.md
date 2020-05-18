@@ -1,4 +1,4 @@
-# 안녕하세요. 프론트앤드 지원자 윤승현입니다.
+# ABOUT
 
 프런트 앤드 신입으로 지원하는 윤승현이라고 합니다.</br>
 웹퍼블리셔로 2년 반 정도 일해서 HTML/CSS/jQuery는 익숙합니다.</br>
@@ -12,6 +12,10 @@
 - **[블로그 바로가기][bloglink]**
 
 [bloglink]: https://ddock4you.netlify.com/ 'Go bloglink'
+
+- **[자기소개서 PDF로 다운받기][pdflink]**
+
+[pdflink]: https://drive.google.com/open?id=1PsV13sFlDAn9yl4FUGR_SoxYshYAF5lH 'Go pdf'
 
 ## 자기소개서
 
